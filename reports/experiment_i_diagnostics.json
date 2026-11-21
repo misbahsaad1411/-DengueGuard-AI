@@ -1,0 +1,152 @@
+{
+    "experiment": "I",
+    "title": "Two-stage outbreak prediction",
+    "target": "target_cases_next_2_4w",
+    "high_event_threshold": 28,
+    "alert_probability_threshold": 0.5,
+    "training_records": 24540,
+    "validation_records": 2940,
+    "training_high_events": 2567,
+    "validation_high_events": 186,
+    "reference_A": {
+        "overall": {
+            "records": 2940,
+            "mae": 2.21626915552009,
+            "rmse": 4.0088595063252015,
+            "r2": 0.8507698906266953,
+            "bias": 1.0471113473117555,
+            "actual_mean": 6.896938775510204,
+            "predicted_mean": 7.94405012282196,
+            "underprediction_records": 640,
+            "overprediction_records": 2293
+        }
+    },
+    "two_stage": {
+        "classifier": {
+            "probability_threshold": 0.5,
+            "actual_events": 186,
+            "predicted_events": 227,
+            "true_positive": 127,
+            "false_positive": 100,
+            "missed_events": 59,
+            "precision": 0.5594713656387665,
+            "recall": 0.6827956989247311,
+            "f1": 0.6150121065375302,
+            "accuracy": 0.9459183673469388,
+            "roc_auc": 0.9687434113430318,
+            "average_precision": 0.6959127441032146,
+            "brier_score": 0.035913585515360676
+        },
+        "expected_prediction": {
+            "overall": {
+                "records": 2940,
+                "mae": 2.250192304028342,
+                "rmse": 4.10724031596236,
+                "r2": 0.8433555496152427,
+                "bias": 0.8582839815785237,
+                "actual_mean": 6.896938775510204,
+                "predicted_mean": 7.755222757088728,
+                "underprediction_records": 671,
+                "overprediction_records": 2269
+            },
+            "severity": [
+                {
+                    "severity": "Below 28",
+                    "records": 2754,
+                    "mae": 1.9278586363770933,
+                    "bias": 1.0841400884325412,
+                    "underprediction_rate": 0.2037037037037037
+                },
+                {
+                    "severity": "28-34",
+                    "records": 106,
+                    "mae": 5.661221625910174,
+                    "bias": -1.1318391328262245,
+                    "underprediction_rate": 0.5566037735849056
+                },
+                {
+                    "severity": "35-44",
+                    "records": 66,
+                    "mae": 7.842580366982891,
+                    "bias": -2.331046317110862,
+                    "underprediction_rate": 0.5606060606060606
+                },
+                {
+                    "severity": "45-59",
+                    "records": 14,
+                    "mae": 13.4673494781044,
+                    "bias": -13.4673494781044,
+                    "underprediction_rate": 1.0
+                },
+                {
+                    "severity": "60+",
+                    "records": 0,
+                    "mae": null,
+                    "bias": null,
+                    "underprediction_rate": null
+                }
+            ]
+        },
+        "hard_routing": {
+            "overall": {
+                "records": 2940,
+                "mae": 2.4196460445977777,
+                "rmse": 4.588948016272212,
+                "r2": 0.8044575462065467,
+                "bias": 0.8212663320372033,
+                "actual_mean": 6.896938775510204,
+                "predicted_mean": 7.718205107547408,
+                "underprediction_records": 703,
+                "overprediction_records": 2198
+            },
+            "severity": [
+                {
+                    "severity": "Below 28",
+                    "records": 2754,
+                    "mae": 2.004956979337255,
+                    "bias": 0.977919393099871,
+                    "underprediction_rate": 0.22076978939724037
+                },
+                {
+                    "severity": "28-34",
+                    "records": 106,
+                    "mae": 8.57118823738012,
+                    "bias": -0.5608606029687534,
+                    "underprediction_rate": 0.44339622641509435
+                },
+                {
+                    "severity": "35-44",
+                    "records": 66,
+                    "mae": 7.706874132243268,
+                    "bias": -0.6713267327372937,
+                    "underprediction_rate": 0.5151515151515151
+                },
+                {
+                    "severity": "45-59",
+                    "records": 14,
+                    "mae": 12.493443152308377,
+                    "bias": -12.493443152308377,
+                    "underprediction_rate": 1.0
+                },
+                {
+                    "severity": "60+",
+                    "records": 0,
+                    "mae": null,
+                    "bias": null,
+                    "underprediction_rate": null
+                }
+            ]
+        }
+    },
+    "notes": [
+        "All models use training data before 2024.",
+        "Validation uses 2024 only.",
+        "The 2025 test period is not used.",
+        "Current-week dengue_cases is excluded from features.",
+        "The outbreak classifier target is actual target cases >= 28.",
+        "The alert probability threshold is fixed at 0.50.",
+        "No validation-based threshold optimization is performed.",
+        "The probability-weighted prediction is the primary two-stage forecast.",
+        "The hard-routed prediction is diagnostic."
+    ]
+}

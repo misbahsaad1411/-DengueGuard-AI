@@ -1,0 +1,249 @@
+{
+    "experiment": "A - Existing HistGradientBoosting",
+    "target": "target_cases_next_2_4w",
+    "target_definition": "Sum of dengue cases at weeks t+2, t+3 and t+4",
+    "training_records": 24540,
+    "validation_records": 2940,
+    "training_start": "2016-02-01",
+    "training_end": "2023-11-27",
+    "validation_start": "2024-01-01",
+    "validation_end": "2024-12-02",
+    "feature_count": 46,
+    "high_incidence_threshold_from_training": 28.0,
+    "overall_performance": {
+        "records": 2940,
+        "actual_mean": 6.8969,
+        "predicted_mean": 7.9441,
+        "mae": 2.2164,
+        "rmse": 4.0088,
+        "r2": 0.8508,
+        "bias": 1.0472
+    },
+    "baseline_performance": {
+        "records": 2940,
+        "actual_mean": 6.8969,
+        "predicted_mean": 6.8944,
+        "mae": 6.2588,
+        "rmse": 10.1316,
+        "r2": 0.0468,
+        "bias": -0.0026
+    },
+    "city_performance": {
+        "Chattogram": {
+            "records": 490,
+            "actual_mean": 6.6776,
+            "predicted_mean": 7.6379,
+            "mae": 2.217,
+            "rmse": 4.2097,
+            "r2": 0.8425,
+            "bias": 0.9604
+        },
+        "Dhaka North": {
+            "records": 980,
+            "actual_mean": 6.7918,
+            "predicted_mean": 7.8111,
+            "mae": 2.0792,
+            "rmse": 3.6804,
+            "r2": 0.8708,
+            "bias": 1.0193
+        },
+        "Dhaka South": {
+            "records": 980,
+            "actual_mean": 6.7245,
+            "predicted_mean": 7.9191,
+            "mae": 2.2654,
+            "rmse": 4.1331,
+            "r2": 0.823,
+            "bias": 1.1946
+        },
+        "Gazipur": {
+            "records": 245,
+            "actual_mean": 8.9633,
+            "predicted_mean": 9.4618,
+            "mae": 2.514,
+            "rmse": 4.381,
+            "r2": 0.8852,
+            "bias": 0.4985
+        },
+        "Narayanganj": {
+            "records": 245,
+            "actual_mean": 6.3796,
+            "predicted_mean": 7.6715,
+            "mae": 2.2701,
+            "rmse": 3.9617,
+            "r2": 0.8254,
+            "bias": 1.2919
+        }
+    },
+    "monthly_performance_by_prediction_date": {
+        "1": {
+            "records": 300,
+            "actual_mean": 0.0367,
+            "predicted_mean": 0.1339,
+            "mae": 0.1612,
+            "rmse": 0.2165,
+            "r2": -0.3267,
+            "bias": 0.0972
+        },
+        "2": {
+            "records": 240,
+            "actual_mean": 0.0708,
+            "predicted_mean": 0.1384,
+            "mae": 0.1932,
+            "rmse": 0.3757,
+            "r2": -0.0026,
+            "bias": 0.0675
+        },
+        "3": {
+            "records": 240,
+            "actual_mean": 0.6833,
+            "predicted_mean": 0.2879,
+            "mae": 0.6625,
+            "rmse": 1.1708,
+            "r2": 0.0808,
+            "bias": -0.3955
+        },
+        "4": {
+            "records": 300,
+            "actual_mean": 2.1,
+            "predicted_mean": 2.3773,
+            "mae": 1.4406,
+            "rmse": 1.8174,
+            "r2": 0.1376,
+            "bias": 0.2773
+        },
+        "5": {
+            "records": 240,
+            "actual_mean": 2.875,
+            "predicted_mean": 3.7918,
+            "mae": 1.791,
+            "rmse": 2.117,
+            "r2": 0.1572,
+            "bias": 0.9168
+        },
+        "6": {
+            "records": 240,
+            "actual_mean": 13.55,
+            "predicted_mean": 14.5672,
+            "mae": 3.5812,
+            "rmse": 4.6297,
+            "r2": 0.6093,
+            "bias": 1.0172
+        },
+        "7": {
+            "records": 300,
+            "actual_mean": 22.3,
+            "predicted_mean": 23.7954,
+            "mae": 5.577,
+            "rmse": 7.1321,
+            "r2": 0.2704,
+            "bias": 1.4954
+        },
+        "8": {
+            "records": 240,
+            "actual_mean": 25.7542,
+            "predicted_mean": 29.2127,
+            "mae": 5.7477,
+            "rmse": 7.1055,
+            "r2": 0.5148,
+            "bias": 3.4585
+        },
+        "9": {
+            "records": 300,
+            "actual_mean": 8.7533,
+            "predicted_mean": 12.9914,
+            "mae": 4.7642,
+            "rmse": 6.3938,
+            "r2": 0.2198,
+            "bias": 4.2381
+        },
+        "10": {
+            "records": 240,
+            "actual_mean": 0.0083,
+            "predicted_mean": 0.0929,
+            "mae": 0.0982,
+            "rmse": 0.1345,
+            "r2": -1.1886,
+            "bias": 0.0845
+        },
+        "11": {
+            "records": 240,
+            "actual_mean": 0.0458,
+            "predicted_mean": 0.0817,
+            "mae": 0.1168,
+            "rmse": 0.2066,
+            "r2": 0.0237,
+            "bias": 0.0358
+        },
+        "12": {
+            "records": 60,
+            "actual_mean": 0.05,
+            "predicted_mean": 0.0832,
+            "mae": 0.1245,
+            "rmse": 0.2221,
+            "r2": -0.0388,
+            "bias": 0.0332
+        }
+    },
+    "high_incidence_performance": {
+        "records": 186,
+        "actual_mean": 34.8548,
+        "predicted_mean": 33.6768,
+        "mae": 6.659,
+        "rmse": 8.0706,
+        "r2": -0.6643,
+        "bias": -1.1781,
+        "actual_high_underprediction_rate": 0.5968,
+        "high_event_missed_rate": 0.2903
+    },
+    "underprediction_records": 640,
+    "overprediction_records": 2292,
+    "feature_columns": [
+        "city",
+        "ward_id",
+        "population_density_sqkm",
+        "water_logging_risk_index",
+        "sanitation_score",
+        "avg_temp_c",
+        "max_temp_c",
+        "min_temp_c",
+        "rainfall_mm",
+        "relative_humidity_pct",
+        "rainfall_mm_lag_1",
+        "rainfall_mm_lag_2",
+        "rainfall_mm_lag_3",
+        "rainfall_mm_lag_4",
+        "avg_temp_c_lag_1",
+        "avg_temp_c_lag_2",
+        "avg_temp_c_lag_3",
+        "avg_temp_c_lag_4",
+        "max_temp_c_lag_1",
+        "max_temp_c_lag_2",
+        "max_temp_c_lag_3",
+        "max_temp_c_lag_4",
+        "min_temp_c_lag_1",
+        "min_temp_c_lag_2",
+        "min_temp_c_lag_3",
+        "min_temp_c_lag_4",
+        "relative_humidity_pct_lag_1",
+        "relative_humidity_pct_lag_2",
+        "relative_humidity_pct_lag_3",
+        "relative_humidity_pct_lag_4",
+        "dengue_cases_lag_1",
+        "dengue_cases_lag_2",
+        "dengue_cases_lag_3",
+        "dengue_cases_lag_4",
+        "rainfall_mm_rolling_4w",
+        "avg_temp_c_rolling_4w",
+        "max_temp_c_rolling_4w",
+        "min_temp_c_rolling_4w",
+        "relative_humidity_pct_rolling_4w",
+        "rainfall_rolling_4w_sum",
+        "dengue_cases_rolling_4w",
+        "dengue_cases_rolling_4w_sum",
+        "week_of_year",
+        "month",
+        "week_sin",
+        "week_cos"
+    ]
+}

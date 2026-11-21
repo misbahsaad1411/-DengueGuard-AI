@@ -1,0 +1,61 @@
+city,month,positive_median,positive_p80,threshold_source
+Chattogram,1,1.0,1.0,city_month
+Chattogram,2,1.0,2.0,city_month
+Chattogram,3,1.0,2.0,city_month
+Chattogram,4,2.0,4.0,city_month
+Chattogram,5,3.0,6.800000000000011,city_month
+Chattogram,6,14.0,25.0,city_month
+Chattogram,7,24.0,40.19999999999999,city_month
+Chattogram,8,25.5,36.0,city_month
+Chattogram,9,14.0,25.0,city_month
+Chattogram,10,1.0,2.0,city_month
+Chattogram,11,1.0,1.0,city_month
+Chattogram,12,1.0,1.6000000000000005,city_month
+Dhaka North,1,1.0,1.0,city_month
+Dhaka North,2,1.0,1.0,city_month
+Dhaka North,3,1.0,2.0,city_month
+Dhaka North,4,2.0,4.0,city_month
+Dhaka North,5,4.0,7.0,city_month
+Dhaka North,6,15.0,24.0,city_month
+Dhaka North,7,25.0,38.200000000000045,city_month
+Dhaka North,8,26.0,36.0,city_month
+Dhaka North,9,15.0,26.0,city_month
+Dhaka North,10,1.0,2.0,city_month
+Dhaka North,11,1.0,1.0,city_month
+Dhaka North,12,1.0,1.0,city_month
+Dhaka South,1,1.0,1.0,city_month
+Dhaka South,2,1.0,1.0,city_month
+Dhaka South,3,1.0,2.0,city_month
+Dhaka South,4,2.0,4.0,city_month
+Dhaka South,5,4.0,7.0,city_month
+Dhaka South,6,16.0,24.0,city_month
+Dhaka South,7,26.0,40.0,city_month
+Dhaka South,8,26.0,37.0,city_month
+Dhaka South,9,14.0,25.600000000000023,city_month
+Dhaka South,10,1.0,2.0,city_month
+Dhaka South,11,1.0,1.0,city_month
+Dhaka South,12,1.0,1.0,city_month
+Gazipur,1,1.0,1.0,city_month
+Gazipur,2,1.0,2.0,city_month
+Gazipur,3,1.0,2.0,city_month
+Gazipur,4,3.0,4.0,city_month
+Gazipur,5,4.0,8.0,city_month
+Gazipur,6,19.0,28.200000000000017,city_month
+Gazipur,7,31.0,47.0,city_month
+Gazipur,8,31.0,42.0,city_month
+Gazipur,9,20.0,30.0,city_month
+Gazipur,10,1.0,2.6000000000000014,city_month
+Gazipur,11,14.0,31.0,city_wide_fallback
+Gazipur,12,14.0,31.0,city_wide_fallback
+Narayanganj,1,1.0,1.0,city_month
+Narayanganj,2,1.0,1.0,city_month
+Narayanganj,3,1.0,2.0,city_month
+Narayanganj,4,2.0,4.0,city_month
+Narayanganj,5,3.0,6.0,city_month
+Narayanganj,6,15.0,22.0,city_month
+Narayanganj,7,23.0,36.0,city_month
+Narayanganj,8,25.0,34.0,city_month
+Narayanganj,9,15.0,26.0,city_month
+Narayanganj,10,1.0,1.0,city_month
+Narayanganj,11,1.0,1.0,city_month
+Narayanganj,12,1.5,1.8,city_month

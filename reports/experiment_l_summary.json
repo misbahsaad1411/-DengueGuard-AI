@@ -1,0 +1,324 @@
+{
+    "experiment": "L - Rolling-Origin Backtesting",
+    "validation_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+    ],
+    "random_state": 42,
+    "fold_results": {
+        "2019": {
+            "training_records": 8940,
+            "validation_records": 2880,
+            "training_high_event_threshold": 27.0,
+            "model_A": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 3.8439687499999997,
+                    "rmse": 7.045533393477822,
+                    "r2": 0.8073575900637823,
+                    "bias": -1.9269131944444444
+                },
+                "high_event": {
+                    "threshold": 27.0,
+                    "actual_high_records": 503,
+                    "predicted_high_records": 349,
+                    "true_positive": 314,
+                    "false_positive": 35,
+                    "false_negative": 189,
+                    "precision": 0.8997134670487106,
+                    "recall": 0.6242544731610338,
+                    "f1": 0.7370892018779343
+                }
+            },
+            "Q50": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 3.888503472222222,
+                    "rmse": 7.219155645168392,
+                    "r2": 0.7977460752359474,
+                    "bias": -2.1761006944444445
+                },
+                "high_event": {
+                    "threshold": 27.0,
+                    "actual_high_records": 503,
+                    "predicted_high_records": 313,
+                    "true_positive": 291,
+                    "false_positive": 22,
+                    "false_negative": 212,
+                    "precision": 0.9297124600638977,
+                    "recall": 0.5785288270377733,
+                    "f1": 0.7132352941176471
+                }
+            },
+            "q50_mae_improvement_percent": -1.1585609852375127,
+            "paired_record_comparison": {
+                "q50_better_records": 1674,
+                "q50_worse_records": 1056,
+                "equal_error_records": 150,
+                "q50_better_percentage": 58.12500000000001
+            }
+        },
+        "2020": {
+            "training_records": 12060,
+            "validation_records": 2880,
+            "training_high_event_threshold": 29.0,
+            "model_A": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 2.4328680555555553,
+                    "rmse": 4.399880230377489,
+                    "r2": 0.8384386940874439,
+                    "bias": 0.3328472222222223
+                },
+                "high_event": {
+                    "threshold": 29.0,
+                    "actual_high_records": 189,
+                    "predicted_high_records": 148,
+                    "true_positive": 81,
+                    "false_positive": 67,
+                    "false_negative": 108,
+                    "precision": 0.5472972972972973,
+                    "recall": 0.42857142857142855,
+                    "f1": 0.4807121661721068
+                }
+            },
+            "Q50": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 2.3051979166666667,
+                    "rmse": 4.1900392094094885,
+                    "r2": 0.8534817173488174,
+                    "bias": -0.4327256944444444
+                },
+                "high_event": {
+                    "threshold": 29.0,
+                    "actual_high_records": 189,
+                    "predicted_high_records": 82,
+                    "true_positive": 56,
+                    "false_positive": 26,
+                    "false_negative": 133,
+                    "precision": 0.6829268292682927,
+                    "recall": 0.2962962962962963,
+                    "f1": 0.4132841328413284
+                }
+            },
+            "q50_mae_improvement_percent": 5.24772145358843,
+            "paired_record_comparison": {
+                "q50_better_records": 1848,
+                "q50_worse_records": 999,
+                "equal_error_records": 33,
+                "q50_better_percentage": 64.16666666666667
+            }
+        },
+        "2021": {
+            "training_records": 15180,
+            "validation_records": 2880,
+            "training_high_event_threshold": 28.0,
+            "model_A": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 2.062034722222222,
+                    "rmse": 3.6109696874016173,
+                    "r2": 0.8565685675002634,
+                    "bias": 0.4318888888888889
+                },
+                "high_event": {
+                    "threshold": 28.0,
+                    "actual_high_records": 131,
+                    "predicted_high_records": 120,
+                    "true_positive": 73,
+                    "false_positive": 47,
+                    "false_negative": 58,
+                    "precision": 0.6083333333333333,
+                    "recall": 0.5572519083969466,
+                    "f1": 0.5816733067729084
+                }
+            },
+            "Q50": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 1.9419826388888888,
+                    "rmse": 3.4289409150073014,
+                    "r2": 0.870664825336358,
+                    "bias": 0.24069791666666665
+                },
+                "high_event": {
+                    "threshold": 28.0,
+                    "actual_high_records": 131,
+                    "predicted_high_records": 98,
+                    "true_positive": 63,
+                    "false_positive": 35,
+                    "false_negative": 68,
+                    "precision": 0.6428571428571429,
+                    "recall": 0.48091603053435117,
+                    "f1": 0.5502183406113537
+                }
+            },
+            "q50_mae_improvement_percent": 5.822020455793061,
+            "paired_record_comparison": {
+                "q50_better_records": 1772,
+                "q50_worse_records": 981,
+                "equal_error_records": 127,
+                "q50_better_percentage": 61.52777777777778
+            }
+        },
+        "2022": {
+            "training_records": 18300,
+            "validation_records": 2880,
+            "training_high_event_threshold": 26.0,
+            "model_A": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 3.7993159722222223,
+                    "rmse": 7.1527289008578165,
+                    "r2": 0.7473503927311897,
+                    "bias": -1.4323645833333334
+                },
+                "high_event": {
+                    "threshold": 26.0,
+                    "actual_high_records": 510,
+                    "predicted_high_records": 347,
+                    "true_positive": 261,
+                    "false_positive": 86,
+                    "false_negative": 249,
+                    "precision": 0.7521613832853026,
+                    "recall": 0.5117647058823529,
+                    "f1": 0.6091015169194866
+                }
+            },
+            "Q50": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 2.949107638888889,
+                    "rmse": 5.523323579879741,
+                    "r2": 0.849347594276451,
+                    "bias": -1.3088645833333332
+                },
+                "high_event": {
+                    "threshold": 26.0,
+                    "actual_high_records": 510,
+                    "predicted_high_records": 395,
+                    "true_positive": 326,
+                    "false_positive": 69,
+                    "false_negative": 184,
+                    "precision": 0.8253164556962025,
+                    "recall": 0.6392156862745098,
+                    "f1": 0.7204419889502762
+                }
+            },
+            "q50_mae_improvement_percent": 22.37793170005931,
+            "paired_record_comparison": {
+                "q50_better_records": 2049,
+                "q50_worse_records": 739,
+                "equal_error_records": 92,
+                "q50_better_percentage": 71.14583333333333
+            }
+        },
+        "2023": {
+            "training_records": 21420,
+            "validation_records": 2880,
+            "training_high_event_threshold": 27.0,
+            "model_A": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 2.986802083333333,
+                    "rmse": 5.455905570139368,
+                    "r2": 0.8762048229903502,
+                    "bias": -0.7549965277777777
+                },
+                "high_event": {
+                    "threshold": 27.0,
+                    "actual_high_records": 489,
+                    "predicted_high_records": 394,
+                    "true_positive": 346,
+                    "false_positive": 48,
+                    "false_negative": 143,
+                    "precision": 0.8781725888324873,
+                    "recall": 0.7075664621676891,
+                    "f1": 0.7836919592298981
+                }
+            },
+            "Q50": {
+                "regression": {
+                    "records": 2880,
+                    "mae": 2.9668333333333337,
+                    "rmse": 5.565320502151396,
+                    "r2": 0.8711897582836989,
+                    "bias": -1.1036041666666665
+                },
+                "high_event": {
+                    "threshold": 27.0,
+                    "actual_high_records": 489,
+                    "predicted_high_records": 389,
+                    "true_positive": 336,
+                    "false_positive": 53,
+                    "false_negative": 153,
+                    "precision": 0.8637532133676092,
+                    "recall": 0.6871165644171779,
+                    "f1": 0.765375854214123
+                }
+            },
+            "q50_mae_improvement_percent": 0.6685662271171944,
+            "paired_record_comparison": {
+                "q50_better_records": 1821,
+                "q50_worse_records": 968,
+                "equal_error_records": 91,
+                "q50_better_percentage": 63.22916666666667
+            }
+        }
+    },
+    "pooled_results": {
+        "model_A": {
+            "regression": {
+                "records": 14400,
+                "mae": 3.024997916666667,
+                "rmse": 5.709045896523438,
+                "r2": 0.8234107909140632,
+                "bias": -0.6699076388888889
+            },
+            "high_event": {
+                "threshold": 27.4,
+                "actual_high_records": 1718,
+                "predicted_high_records": 1360,
+                "true_positive": 1025,
+                "false_positive": 335,
+                "false_negative": 693,
+                "precision": 0.7536764705882353,
+                "recall": 0.5966239813736903,
+                "f1": 0.6660168940870695
+            }
+        },
+        "Q50": {
+            "regression": {
+                "records": 14400,
+                "mae": 2.810325,
+                "rmse": 5.346216760736304,
+                "r2": 0.8451432220524525,
+                "bias": -0.9561194444444444
+            },
+            "high_event": {
+                "threshold": 27.4,
+                "actual_high_records": 1718,
+                "predicted_high_records": 1257,
+                "true_positive": 1011,
+                "false_positive": 246,
+                "false_negative": 707,
+                "precision": 0.8042959427207638,
+                "recall": 0.5884749708963911,
+                "f1": 0.6796638655462185
+            }
+        },
+        "q50_mae_improvement_percent": 7.096630231839006,
+        "pooled_high_event_threshold": 27.4
+    },
+    "fold_stability": {
+        "mean_fold_mae_improvement_percent": 6.591535770264097,
+        "minimum_fold_mae_improvement_percent": -1.1585609852375127,
+        "maximum_fold_mae_improvement_percent": 22.37793170005931,
+        "years_q50_improved_mae": 4,
+        "total_years": 5
+    }
+}

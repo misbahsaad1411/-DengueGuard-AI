@@ -1,0 +1,37 @@
+{
+    "status": "PASSED",
+    "checks": {
+        "total_records": 31320,
+        "total_columns": 12,
+        "unique_wards": 60,
+        "unique_cities": 5,
+        "duplicate_ward_date_records": 0,
+        "minimum_records_per_ward": 522,
+        "maximum_records_per_ward": 522,
+        "wards_with_invalid_weekly_gaps": 0,
+        "wards_assigned_to_multiple_cities": 0,
+        "numeric_range_checks": {
+            "dengue_cases_nonnegative": true,
+            "rainfall_nonnegative": true,
+            "population_positive": true,
+            "humidity_between_0_and_100": true,
+            "water_logging_index_between_0_and_1": true,
+            "sanitation_score_between_0_and_1": true
+        },
+        "invalid_temperature_rows": 0,
+        "overall_start_date": "2016-01-04",
+        "overall_end_date": "2025-12-29",
+        "wards_with_different_date_ranges": 0,
+        "non_finite_numeric_values": 0,
+        "records_per_city": {
+            "Dhaka North": 10440,
+            "Dhaka South": 10440,
+            "Chattogram": 5220,
+            "Gazipur": 2610,
+            "Narayanganj": 2610
+        }
+    },
+    "errors": [],
+    "warnings": [],
+    "weekly_gap_details": {}
+}

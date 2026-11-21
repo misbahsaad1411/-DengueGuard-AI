@@ -1,0 +1,283 @@
+{
+    "overall": {
+        "records": 2880,
+        "actual_mean": 7.733,
+        "predicted_mean": 9.242,
+        "mae": 2.6946,
+        "rmse": 4.9629,
+        "bias": 1.5091
+    },
+    "city_performance": {
+        "Chattogram": {
+            "records": 480,
+            "actual_mean": 8.025,
+            "predicted_mean": 9.007,
+            "mae": 2.3967,
+            "rmse": 4.3959,
+            "bias": 0.9815
+        },
+        "Dhaka North": {
+            "records": 960,
+            "actual_mean": 7.517,
+            "predicted_mean": 9.1,
+            "mae": 2.7454,
+            "rmse": 5.012,
+            "bias": 1.5829
+        },
+        "Dhaka South": {
+            "records": 960,
+            "actual_mean": 7.486,
+            "predicted_mean": 9.151,
+            "mae": 2.7556,
+            "rmse": 5.1347,
+            "bias": 1.6646
+        },
+        "Gazipur": {
+            "records": 240,
+            "actual_mean": 8.975,
+            "predicted_mean": 11.0,
+            "mae": 3.0732,
+            "rmse": 5.6302,
+            "bias": 2.0252
+        },
+        "Narayanganj": {
+            "records": 240,
+            "actual_mean": 7.758,
+            "predicted_mean": 8.889,
+            "mae": 2.4638,
+            "rmse": 4.3907,
+            "bias": 1.1307
+        }
+    },
+    "monthly_performance": {
+        "1": {
+            "records": 240,
+            "actual_mean": 0.021,
+            "predicted_mean": 0.089,
+            "mae": 0.1083,
+            "rmse": 0.1735,
+            "bias": 0.068
+        },
+        "2": {
+            "records": 240,
+            "actual_mean": 0.067,
+            "predicted_mean": 0.089,
+            "mae": 0.1435,
+            "rmse": 0.2691,
+            "bias": 0.0222
+        },
+        "3": {
+            "records": 300,
+            "actual_mean": 0.53,
+            "predicted_mean": 0.564,
+            "mae": 0.55,
+            "rmse": 0.7608,
+            "bias": 0.0343
+        },
+        "4": {
+            "records": 240,
+            "actual_mean": 1.804,
+            "predicted_mean": 2.042,
+            "mae": 1.1217,
+            "rmse": 1.3977,
+            "bias": 0.2373
+        },
+        "5": {
+            "records": 240,
+            "actual_mean": 5.312,
+            "predicted_mean": 4.248,
+            "mae": 3.097,
+            "rmse": 4.4474,
+            "bias": -1.0647
+        },
+        "6": {
+            "records": 300,
+            "actual_mean": 23.54,
+            "predicted_mean": 30.714,
+            "mae": 8.2937,
+            "rmse": 10.0722,
+            "bias": 7.1739
+        },
+        "7": {
+            "records": 240,
+            "actual_mean": 18.646,
+            "predicted_mean": 23.835,
+            "mae": 6.2905,
+            "rmse": 8.0171,
+            "bias": 5.1891
+        },
+        "8": {
+            "records": 240,
+            "actual_mean": 24.942,
+            "predicted_mean": 25.372,
+            "mae": 5.036,
+            "rmse": 6.4837,
+            "bias": 0.4306
+        },
+        "9": {
+            "records": 300,
+            "actual_mean": 9.37,
+            "predicted_mean": 12.789,
+            "mae": 4.1359,
+            "rmse": 5.6318,
+            "bias": 3.4194
+        },
+        "10": {
+            "records": 240,
+            "actual_mean": 0.179,
+            "predicted_mean": 0.069,
+            "mae": 0.2132,
+            "rmse": 0.4553,
+            "bias": -0.1102
+        },
+        "11": {
+            "records": 240,
+            "actual_mean": 0.017,
+            "predicted_mean": 0.062,
+            "mae": 0.0763,
+            "rmse": 0.1426,
+            "bias": 0.0449
+        },
+        "12": {
+            "records": 60,
+            "actual_mean": 0.033,
+            "predicted_mean": 0.062,
+            "mae": 0.0955,
+            "rmse": 0.1985,
+            "bias": 0.0288
+        }
+    },
+    "high_incidence_threshold_90th_percentile": 25.0,
+    "high_incidence_performance": {
+        "records": 302,
+        "actual_mean": 31.334,
+        "predicted_mean": 32.96,
+        "mae": 6.1202,
+        "rmse": 7.7843,
+        "bias": 1.626
+    },
+    "underprediction_records": 645,
+    "overprediction_records": 2074,
+    "worst_predictions": [
+        {
+            "date": "2025-06-23",
+            "city": "Dhaka North",
+            "ward_id": "DNCC_Ward_19",
+            "actual_cases_next_2_4w": 17,
+            "predicted_cases_next_2_4w": 45.11,
+            "absolute_error": 28.11
+        },
+        {
+            "date": "2025-06-23",
+            "city": "Dhaka North",
+            "ward_id": "DNCC_Ward_12",
+            "actual_cases_next_2_4w": 19,
+            "predicted_cases_next_2_4w": 45.85,
+            "absolute_error": 26.85
+        },
+        {
+            "date": "2025-06-23",
+            "city": "Dhaka North",
+            "ward_id": "DNCC_Ward_09",
+            "actual_cases_next_2_4w": 14,
+            "predicted_cases_next_2_4w": 40.56,
+            "absolute_error": 26.560000000000002
+        },
+        {
+            "date": "2025-06-30",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_06",
+            "actual_cases_next_2_4w": 19,
+            "predicted_cases_next_2_4w": 44.44,
+            "absolute_error": 25.439999999999998
+        },
+        {
+            "date": "2025-07-07",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_06",
+            "actual_cases_next_2_4w": 17,
+            "predicted_cases_next_2_4w": 42.29,
+            "absolute_error": 25.29
+        },
+        {
+            "date": "2025-07-07",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_12",
+            "actual_cases_next_2_4w": 13,
+            "predicted_cases_next_2_4w": 36.71,
+            "absolute_error": 23.71
+        },
+        {
+            "date": "2025-06-30",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_12",
+            "actual_cases_next_2_4w": 15,
+            "predicted_cases_next_2_4w": 38.6,
+            "absolute_error": 23.6
+        },
+        {
+            "date": "2025-06-16",
+            "city": "Chattogram",
+            "ward_id": "CCC_Ward_01",
+            "actual_cases_next_2_4w": 28,
+            "predicted_cases_next_2_4w": 51.32,
+            "absolute_error": 23.32
+        },
+        {
+            "date": "2025-06-09",
+            "city": "Gazipur",
+            "ward_id": "GCC_Ward_02",
+            "actual_cases_next_2_4w": 22,
+            "predicted_cases_next_2_4w": 45.14,
+            "absolute_error": 23.14
+        },
+        {
+            "date": "2025-07-07",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_04",
+            "actual_cases_next_2_4w": 24,
+            "predicted_cases_next_2_4w": 46.98,
+            "absolute_error": 22.979999999999997
+        },
+        {
+            "date": "2025-06-23",
+            "city": "Gazipur",
+            "ward_id": "GCC_Ward_01",
+            "actual_cases_next_2_4w": 13,
+            "predicted_cases_next_2_4w": 35.85,
+            "absolute_error": 22.85
+        },
+        {
+            "date": "2025-06-30",
+            "city": "Dhaka North",
+            "ward_id": "DNCC_Ward_12",
+            "actual_cases_next_2_4w": 29,
+            "predicted_cases_next_2_4w": 51.37,
+            "absolute_error": 22.369999999999997
+        },
+        {
+            "date": "2025-08-25",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_12",
+            "actual_cases_next_2_4w": 13,
+            "predicted_cases_next_2_4w": 34.8,
+            "absolute_error": 21.799999999999997
+        },
+        {
+            "date": "2025-06-16",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_10",
+            "actual_cases_next_2_4w": 22,
+            "predicted_cases_next_2_4w": 43.71,
+            "absolute_error": 21.71
+        },
+        {
+            "date": "2025-06-23",
+            "city": "Dhaka South",
+            "ward_id": "DSCC_Ward_06",
+            "actual_cases_next_2_4w": 24,
+            "predicted_cases_next_2_4w": 45.58,
+            "absolute_error": 21.58
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "experiment": "B - High-incidence weighted training",
+    "target": "target_cases_next_2_4w",
+    "target_definition": "Sum of dengue cases at weeks t+2, t+3 and t+4",
+    "training_records": 24540,
+    "validation_records": 2940,
+    "feature_count": 46,
+    "feature_columns": [
+        "city",
+        "ward_id",
+        "population_density_sqkm",
+        "water_logging_risk_index",
+        "sanitation_score",
+        "avg_temp_c",
+        "max_temp_c",
+        "min_temp_c",
+        "rainfall_mm",
+        "relative_humidity_pct",
+        "rainfall_mm_lag_1",
+        "rainfall_mm_lag_2",
+        "rainfall_mm_lag_3",
+        "rainfall_mm_lag_4",
+        "avg_temp_c_lag_1",
+        "avg_temp_c_lag_2",
+        "avg_temp_c_lag_3",
+        "avg_temp_c_lag_4",
+        "max_temp_c_lag_1",
+        "max_temp_c_lag_2",
+        "max_temp_c_lag_3",
+        "max_temp_c_lag_4",
+        "min_temp_c_lag_1",
+        "min_temp_c_lag_2",
+        "min_temp_c_lag_3",
+        "min_temp_c_lag_4",
+        "relative_humidity_pct_lag_1",
+        "relative_humidity_pct_lag_2",
+        "relative_humidity_pct_lag_3",
+        "relative_humidity_pct_lag_4",
+        "dengue_cases_lag_1",
+        "dengue_cases_lag_2",
+        "dengue_cases_lag_3",
+        "dengue_cases_lag_4",
+        "rainfall_mm_rolling_4w",
+        "avg_temp_c_rolling_4w",
+        "max_temp_c_rolling_4w",
+        "min_temp_c_rolling_4w",
+        "relative_humidity_pct_rolling_4w",
+        "rainfall_rolling_4w_sum",
+        "dengue_cases_rolling_4w",
+        "dengue_cases_rolling_4w_sum",
+        "week_of_year",
+        "month",
+        "week_sin",
+        "week_cos"
+    ],
+    "high_incidence_threshold_from_training": 28.0,
+    "high_incidence_training_records": 2567,
+    "weighting_strengths_tested": [
+        1.5,
+        2.0,
+        3.0
+    ],
+    "baseline_performance": {
+        "records": 2940,
+        "actual_mean": 6.8969,
+        "predicted_mean": 6.8944,
+        "mae": 6.2588,
+        "rmse": 10.1316,
+        "r2": 0.0468,
+        "bias": -0.0026
+    },
+    "results": {
+        "1.0": {
+            "experiment": "Unweighted reference",
+            "overall": {
+                "records": 2940,
+                "actual_mean": 6.8969,
+                "predicted_mean": 7.9441,
+                "mae": 2.2163,
+                "rmse": 4.0089,
+                "r2": 0.8508,
+                "bias": 1.0471
+            },
+            "high_incidence": {
+                "threshold": 28.0,
+                "actual_high_records": 186,
+                "predicted_high_records": 218,
+                "true_positive": 132,
+                "false_positive": 86,
+                "missed_high_events": 54,
+                "precision": 0.6055,
+                "recall": 0.7097,
+                "f1": 0.6535,
+                "high_incidence_mae": 6.6593,
+                "high_event_missed_rate": 0.2903
+            }
+        },
+        "1.5": {
+            "experiment": "High-incidence weighting 1.5x",
+            "training_weight": 1.5,
+            "overall": {
+                "records": 2940,
+                "actual_mean": 6.8969,
+                "predicted_mean": 7.9503,
+                "mae": 2.2701,
+                "rmse": 4.0999,
+                "r2": 0.8439,
+                "bias": 1.0534
+            },
+            "high_incidence": {
+                "threshold": 28.0,
+                "actual_high_records": 186,
+                "predicted_high_records": 229,
+                "true_positive": 135,
+                "false_positive": 94,
+                "missed_high_events": 51,
+                "precision": 0.5895,
+                "recall": 0.7258,
+                "f1": 0.6506,
+                "high_incidence_mae": 6.4187,
+                "high_event_missed_rate": 0.2742
+            }
+        },
+        "2.0": {
+            "experiment": "High-incidence weighting 2.0x",
+            "training_weight": 2.0,
+            "overall": {
+                "records": 2940,
+                "actual_mean": 6.8969,
+                "predicted_mean": 8.0628,
+                "mae": 2.2766,
+                "rmse": 4.0513,
+                "r2": 0.8476,
+                "bias": 1.1659
+            },
+            "high_incidence": {
+                "threshold": 28.0,
+                "actual_high_records": 186,
+                "predicted_high_records": 245,
+                "true_positive": 142,
+                "false_positive": 103,
+                "missed_high_events": 44,
+                "precision": 0.5796,
+                "recall": 0.7634,
+                "f1": 0.6589,
+                "high_incidence_mae": 5.8798,
+                "high_event_missed_rate": 0.2366
+            }
+        },
+        "3.0": {
+            "experiment": "High-incidence weighting 3.0x",
+            "training_weight": 3.0,
+            "overall": {
+                "records": 2940,
+                "actual_mean": 6.8969,
+                "predicted_mean": 8.1215,
+                "mae": 2.3444,
+                "rmse": 4.2005,
+                "r2": 0.8362,
+                "bias": 1.2246
+            },
+            "high_incidence": {
+                "threshold": 28.0,
+                "actual_high_records": 186,
+                "predicted_high_records": 268,
+                "true_positive": 148,
+                "false_positive": 120,
+                "missed_high_events": 38,
+                "precision": 0.5522,
+                "recall": 0.7957,
+                "f1": 0.652,
+                "high_incidence_mae": 5.8292,
+                "high_event_missed_rate": 0.2043
+            }
+        }
+    },
+    "test_set_used": false
+}

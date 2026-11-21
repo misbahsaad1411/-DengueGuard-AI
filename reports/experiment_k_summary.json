@@ -1,0 +1,302 @@
+{
+    "experiment": "K - Q50 Robustness",
+    "training_records": 24540,
+    "validation_records": 2940,
+    "feature_count": 46,
+    "high_event_threshold": 28.0,
+    "random_seeds": [
+        42,
+        21,
+        84,
+        123,
+        2026
+    ],
+    "seed_results": {
+        "42": {
+            "model_A": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.216377551020408,
+                    "rmse": 4.008789488519609,
+                    "r2": 0.8507751034177758,
+                    "bias": 1.0472074829931972
+                },
+                "high_event": {
+                    "true_positive": 132,
+                    "false_positive": 86,
+                    "false_negative": 54,
+                    "precision": 0.6055045871559633,
+                    "recall": 0.7096774193548387,
+                    "f1": 0.6534653465346535
+                }
+            },
+            "model_Q50": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.0474863945578234,
+                    "rmse": 3.75704406442629,
+                    "r2": 0.8689287738920609,
+                    "bias": 0.530173469387755
+                },
+                "high_event": {
+                    "true_positive": 118,
+                    "false_positive": 61,
+                    "false_negative": 68,
+                    "precision": 0.659217877094972,
+                    "recall": 0.6344086021505376,
+                    "f1": 0.6465753424657534
+                }
+            },
+            "mae_improvement_percent": 7.620143796566971,
+            "q50_better_high_event_f1": false
+        },
+        "21": {
+            "model_A": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.2016938775510204,
+                    "rmse": 3.9482503228955603,
+                    "r2": 0.8552481430552065,
+                    "bias": 0.8525850340136054
+                },
+                "high_event": {
+                    "true_positive": 125,
+                    "false_positive": 83,
+                    "false_negative": 61,
+                    "precision": 0.6009615384615384,
+                    "recall": 0.6720430107526881,
+                    "f1": 0.6345177664974619
+                }
+            },
+            "model_Q50": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.027591836734694,
+                    "rmse": 3.7129214161057695,
+                    "r2": 0.8719892919847158,
+                    "bias": 0.5451292517006803
+                },
+                "high_event": {
+                    "true_positive": 124,
+                    "false_positive": 69,
+                    "false_negative": 62,
+                    "precision": 0.6424870466321243,
+                    "recall": 0.6666666666666666,
+                    "f1": 0.6543535620052771
+                }
+            },
+            "mae_improvement_percent": 7.907640684815948,
+            "q50_better_high_event_f1": true
+        },
+        "84": {
+            "model_A": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.23071768707483,
+                    "rmse": 4.096598933643523,
+                    "r2": 0.8441661932431028,
+                    "bias": 0.9773367346938777
+                },
+                "high_event": {
+                    "true_positive": 128,
+                    "false_positive": 98,
+                    "false_negative": 58,
+                    "precision": 0.5663716814159292,
+                    "recall": 0.6881720430107527,
+                    "f1": 0.6213592233009708
+                }
+            },
+            "model_Q50": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.0146462585034013,
+                    "rmse": 3.7408044716662343,
+                    "r2": 0.8700594197131174,
+                    "bias": 0.5012925170068027
+                },
+                "high_event": {
+                    "true_positive": 122,
+                    "false_positive": 68,
+                    "false_negative": 64,
+                    "precision": 0.6421052631578947,
+                    "recall": 0.6559139784946236,
+                    "f1": 0.648936170212766
+                }
+            },
+            "mae_improvement_percent": 9.686184398114772,
+            "q50_better_high_event_f1": true
+        },
+        "123": {
+            "model_A": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.292357142857143,
+                    "rmse": 4.139980548937184,
+                    "r2": 0.840848261884616,
+                    "bias": 1.0645408163265306
+                },
+                "high_event": {
+                    "true_positive": 127,
+                    "false_positive": 88,
+                    "false_negative": 59,
+                    "precision": 0.5906976744186047,
+                    "recall": 0.6827956989247311,
+                    "f1": 0.6334164588528678
+                }
+            },
+            "model_Q50": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 1.965047619047619,
+                    "rmse": 3.5909848288201283,
+                    "r2": 0.880259263438592,
+                    "bias": 0.4182380952380952
+                },
+                "high_event": {
+                    "true_positive": 122,
+                    "false_positive": 61,
+                    "false_negative": 64,
+                    "precision": 0.6666666666666666,
+                    "recall": 0.6559139784946236,
+                    "f1": 0.6612466124661247
+                }
+            },
+            "mae_improvement_percent": 14.278295370745447,
+            "q50_better_high_event_f1": true
+        },
+        "2026": {
+            "model_A": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.193996598639456,
+                    "rmse": 3.997244641986672,
+                    "r2": 0.8516333664092185,
+                    "bias": 0.9574591836734694
+                },
+                "high_event": {
+                    "true_positive": 126,
+                    "false_positive": 76,
+                    "false_negative": 60,
+                    "precision": 0.6237623762376238,
+                    "recall": 0.6774193548387096,
+                    "f1": 0.6494845360824743
+                }
+            },
+            "model_Q50": {
+                "metrics": {
+                    "records": 2940,
+                    "mae": 2.05378231292517,
+                    "rmse": 3.815066943359307,
+                    "r2": 0.8648490475726522,
+                    "bias": 0.60221768707483
+                },
+                "high_event": {
+                    "true_positive": 124,
+                    "false_positive": 78,
+                    "false_negative": 62,
+                    "precision": 0.6138613861386139,
+                    "recall": 0.6666666666666666,
+                    "f1": 0.6391752577319587
+                }
+            },
+            "mae_improvement_percent": 6.390816002232443,
+            "q50_better_high_event_f1": false
+        }
+    },
+    "paired_record_comparison_seed_42": {
+        "q50_lower_error_records": 2090,
+        "q50_higher_error_records": 829,
+        "equal_error_records": 21,
+        "q50_better_record_percentage": 71.08843537414967,
+        "mean_absolute_error_difference": 0.16889115646258504
+    },
+    "seed_stability": {
+        "mean_mae_improvement_percent": 9.176616050495117,
+        "minimum_mae_improvement_percent": 6.390816002232443,
+        "maximum_mae_improvement_percent": 14.278295370745447,
+        "seeds_where_q50_improved_mae": 5,
+        "total_seeds": 5
+    },
+    "severity_analysis_seed_42": [
+        {
+            "group_type": "severity",
+            "group": "28_to_34",
+            "model": "Model_A",
+            "records": 106,
+            "mae": 5.36811320754717,
+            "rmse": 6.57365238359752,
+            "r2": -11.049041070054841,
+            "bias": -0.008490566037735533
+        },
+        {
+            "group_type": "severity",
+            "group": "28_to_34",
+            "model": "Q50",
+            "records": 106,
+            "mae": 5.181320754716983,
+            "rmse": 6.363103995129279,
+            "r2": -10.28956107898851,
+            "bias": -2.3571698113207544
+        },
+        {
+            "group_type": "severity",
+            "group": "35_to_44",
+            "model": "Model_A",
+            "records": 66,
+            "mae": 7.7390909090909075,
+            "rmse": 8.988769255424945,
+            "r2": -9.325831574006157,
+            "bias": -0.9006060606060605
+        },
+        {
+            "group_type": "severity",
+            "group": "35_to_44",
+            "model": "Q50",
+            "records": 66,
+            "mae": 7.363484848484847,
+            "rmse": 8.78099091874895,
+            "r2": -8.85397891741235,
+            "bias": -4.092878787878789
+        },
+        {
+            "group_type": "severity",
+            "group": "45_to_59",
+            "model": "Model_A",
+            "records": 14,
+            "mae": 11.341428571428569,
+            "rmse": 12.540477320603527,
+            "r2": -8.605378622623869,
+            "bias": -11.341428571428569
+        },
+        {
+            "group_type": "severity",
+            "group": "45_to_59",
+            "model": "Q50",
+            "records": 14,
+            "mae": 13.716428571428569,
+            "rmse": 14.691677673334071,
+            "r2": -12.183451854160174,
+            "bias": -13.716428571428569
+        },
+        {
+            "group_type": "severity",
+            "group": "below_28",
+            "model": "Model_A",
+            "records": 2754,
+            "mae": 1.9163289760348583,
+            "rmse": 3.571656340179676,
+            "r2": 0.7720649873311034,
+            "bias": 1.1974981844589687
+        },
+        {
+            "group_type": "severity",
+            "group": "below_28",
+            "model": "Q50",
+            "records": 2754,
+            "mae": 1.7401488743645606,
+            "rmse": 3.2504150508673297,
+            "r2": 0.8112228817974465,
+            "bias": 0.824520697167756
+        }
+    ]
+}

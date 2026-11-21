@@ -1,0 +1,375 @@
+{
+    "experiment": "H",
+    "title": "Severity-weighted model training",
+    "training_records": 24540,
+    "validation_records": 2940,
+    "training_period": {
+        "start": "2016-02-01",
+        "end": "2023-11-27"
+    },
+    "validation_period": {
+        "start": "2024-01-01",
+        "end": "2024-12-02"
+    },
+    "target": "target_cases_next_2_4w",
+    "features": 46,
+    "high_event_threshold": 28,
+    "severe_threshold": 45,
+    "extreme_threshold": 60,
+    "training_severe_records": 604,
+    "training_extreme_records": 101,
+    "results": {
+        "H0_unweighted": {
+            "description": "unweighted",
+            "overall": {
+                "records": 2940,
+                "mae": 2.21626915552009,
+                "rmse": 4.0088595063252015,
+                "r2": 0.8507698906266953,
+                "bias": 1.0471113473117555,
+                "underprediction_records": 640,
+                "overprediction_records": 2293,
+                "underprediction_rate": 0.21768707482993196,
+                "actual_mean": 6.896938775510204,
+                "predicted_mean": 7.94405012282196,
+                "actual_max": 57.0,
+                "predicted_max": 57.1164121074295
+            },
+            "alerts": {
+                "alert_threshold": 28,
+                "actual_high_events": 186,
+                "predicted_high_events": 218,
+                "true_positive": 132,
+                "false_positive": 86,
+                "missed_events": 54,
+                "precision": 0.6055045871559633,
+                "recall": 0.7096774193548387,
+                "f1": 0.6534653465346535,
+                "extreme_actual_events_45plus": 14,
+                "extreme_events_detected_at_28": 13,
+                "extreme_event_recall": 0.9285714285714286
+            },
+            "severity": [
+                {
+                    "severity": "Below 28",
+                    "records": 2754,
+                    "actual_mean": 5.008714596949891,
+                    "predicted_mean": 6.206101117531023,
+                    "bias": 1.197386520581132,
+                    "mae": 1.9161972885304015,
+                    "rmse": 3.571725440805463,
+                    "underprediction_rate": 0.19208424110384895,
+                    "detected_at_28": 86
+                },
+                {
+                    "severity": "28-34",
+                    "records": 106,
+                    "actual_mean": 30.443396226415093,
+                    "predicted_mean": 30.435205541372603,
+                    "bias": -0.008190685042491935,
+                    "mae": 5.368306840585465,
+                    "rmse": 6.573448235892257,
+                    "underprediction_rate": 0.5377358490566038,
+                    "detected_at_28": 62
+                },
+                {
+                    "severity": "35-44",
+                    "records": 66,
+                    "actual_mean": 38.803030303030305,
+                    "predicted_mean": 37.90256171704286,
+                    "bias": -0.9004685859874474,
+                    "mae": 7.739204276061819,
+                    "rmse": 8.988919714539612,
+                    "underprediction_rate": 0.6060606060606061,
+                    "detected_at_28": 57
+                },
+                {
+                    "severity": "45-59",
+                    "records": 14,
+                    "actual_mean": 49.642857142857146,
+                    "predicted_mean": 38.3002873361285,
+                    "bias": -11.342569806728642,
+                    "mae": 11.342569806728642,
+                    "rmse": 12.54160794795154,
+                    "underprediction_rate": 1.0,
+                    "detected_at_28": 13
+                },
+                {
+                    "severity": "60+",
+                    "records": 0,
+                    "actual_mean": null,
+                    "predicted_mean": null,
+                    "bias": null,
+                    "mae": null,
+                    "rmse": null,
+                    "underprediction_rate": null,
+                    "detected_at_28": null
+                }
+            ]
+        },
+        "H1_weight_2x_45plus": {
+            "description": "2x for actual cases >= 45",
+            "overall": {
+                "records": 2940,
+                "mae": 2.1835624688281823,
+                "rmse": 3.966132622161495,
+                "r2": 0.8539339619962275,
+                "bias": 0.8945286663453074,
+                "underprediction_records": 682,
+                "overprediction_records": 2208,
+                "underprediction_rate": 0.23197278911564626,
+                "actual_mean": 6.896938775510204,
+                "predicted_mean": 7.79146744185551,
+                "actual_max": 57.0,
+                "predicted_max": 54.50728160612256
+            },
+            "alerts": {
+                "alert_threshold": 28,
+                "actual_high_events": 186,
+                "predicted_high_events": 213,
+                "true_positive": 126,
+                "false_positive": 87,
+                "missed_events": 60,
+                "precision": 0.5915492957746479,
+                "recall": 0.6774193548387096,
+                "f1": 0.631578947368421,
+                "extreme_actual_events_45plus": 14,
+                "extreme_events_detected_at_28": 13,
+                "extreme_event_recall": 0.9285714285714286
+            },
+            "severity": [
+                {
+                    "severity": "Below 28",
+                    "records": 2754,
+                    "actual_mean": 5.008714596949891,
+                    "predicted_mean": 6.096658612994452,
+                    "bias": 1.0879440160445606,
+                    "mae": 1.8838279903029889,
+                    "rmse": 3.513590601795176,
+                    "underprediction_rate": 0.20588235294117646,
+                    "detected_at_28": 87
+                },
+                {
+                    "severity": "28-34",
+                    "records": 106,
+                    "actual_mean": 30.443396226415093,
+                    "predicted_mean": 29.75842081920066,
+                    "bias": -0.6849754072144354,
+                    "mae": 5.508593064947185,
+                    "rmse": 6.746203563103923,
+                    "underprediction_rate": 0.6132075471698113,
+                    "detected_at_28": 56
+                },
+                {
+                    "severity": "35-44",
+                    "records": 66,
+                    "actual_mean": 38.803030303030305,
+                    "predicted_mean": 36.98859139763909,
+                    "bias": -1.8144389053912136,
+                    "mae": 7.178444363106924,
+                    "rmse": 8.575561167858764,
+                    "underprediction_rate": 0.5454545454545454,
+                    "detected_at_28": 57
+                },
+                {
+                    "severity": "45-59",
+                    "records": 14,
+                    "actual_mean": 49.642857142857146,
+                    "predicted_mean": 37.219772842073894,
+                    "bias": -12.423084300783247,
+                    "mae": 12.423084300783247,
+                    "rmse": 13.548729171792251,
+                    "underprediction_rate": 1.0,
+                    "detected_at_28": 13
+                },
+                {
+                    "severity": "60+",
+                    "records": 0,
+                    "actual_mean": null,
+                    "predicted_mean": null,
+                    "bias": null,
+                    "mae": null,
+                    "rmse": null,
+                    "underprediction_rate": null,
+                    "detected_at_28": null
+                }
+            ]
+        },
+        "H2_weight_3x_45plus": {
+            "description": "3x for actual cases >= 45",
+            "overall": {
+                "records": 2940,
+                "mae": 2.2529528404214276,
+                "rmse": 4.124002577227592,
+                "r2": 0.8420743617768502,
+                "bias": 1.0335073702346504,
+                "underprediction_records": 657,
+                "overprediction_records": 2260,
+                "underprediction_rate": 0.22346938775510203,
+                "actual_mean": 6.896938775510204,
+                "predicted_mean": 7.930446145744854,
+                "actual_max": 57.0,
+                "predicted_max": 53.97740560656977
+            },
+            "alerts": {
+                "alert_threshold": 28,
+                "actual_high_events": 186,
+                "predicted_high_events": 218,
+                "true_positive": 131,
+                "false_positive": 87,
+                "missed_events": 55,
+                "precision": 0.6009174311926605,
+                "recall": 0.7043010752688172,
+                "f1": 0.6485148514851485,
+                "extreme_actual_events_45plus": 14,
+                "extreme_events_detected_at_28": 13,
+                "extreme_event_recall": 0.9285714285714286
+            },
+            "severity": [
+                {
+                    "severity": "Below 28",
+                    "records": 2754,
+                    "actual_mean": 5.008714596949891,
+                    "predicted_mean": 6.15088594785173,
+                    "bias": 1.1421713509018385,
+                    "mae": 1.922125337921549,
+                    "rmse": 3.6273160742726853,
+                    "underprediction_rate": 0.20152505446623092,
+                    "detected_at_28": 87
+                },
+                {
+                    "severity": "28-34",
+                    "records": 106,
+                    "actual_mean": 30.443396226415093,
+                    "predicted_mean": 30.759993640252834,
+                    "bias": 0.31659741383773915,
+                    "mae": 6.139224115677868,
+                    "rmse": 7.472183070235916,
+                    "underprediction_rate": 0.5188679245283019,
+                    "detected_at_28": 60
+                },
+                {
+                    "severity": "35-44",
+                    "records": 66,
+                    "actual_mean": 38.803030303030305,
+                    "predicted_mean": 39.120144480509715,
+                    "bias": 0.3171141774794039,
+                    "mae": 7.846565461620681,
+                    "rmse": 9.177682414768984,
+                    "underprediction_rate": 0.5,
+                    "detected_at_28": 58
+                },
+                {
+                    "severity": "45-59",
+                    "records": 14,
+                    "actual_mean": 49.642857142857146,
+                    "predicted_mean": 38.10592189469774,
+                    "bias": -11.536935248159407,
+                    "mae": 11.536935248159407,
+                    "rmse": 12.785830649606114,
+                    "underprediction_rate": 1.0,
+                    "detected_at_28": 13
+                },
+                {
+                    "severity": "60+",
+                    "records": 0,
+                    "actual_mean": null,
+                    "predicted_mean": null,
+                    "bias": null,
+                    "mae": null,
+                    "rmse": null,
+                    "underprediction_rate": null,
+                    "detected_at_28": null
+                }
+            ]
+        },
+        "H3_nested_severity": {
+            "description": "2x for >= 45 and 3x for >= 60",
+            "overall": {
+                "records": 2940,
+                "mae": 2.229905843660175,
+                "rmse": 4.025755620359084,
+                "r2": 0.8495093214178229,
+                "bias": 0.9256308954323413,
+                "underprediction_records": 679,
+                "overprediction_records": 2208,
+                "underprediction_rate": 0.23095238095238096,
+                "actual_mean": 6.896938775510204,
+                "predicted_mean": 7.822569670942546,
+                "actual_max": 57.0,
+                "predicted_max": 55.35556404224343
+            },
+            "alerts": {
+                "alert_threshold": 28,
+                "actual_high_events": 186,
+                "predicted_high_events": 209,
+                "true_positive": 127,
+                "false_positive": 82,
+                "missed_events": 59,
+                "precision": 0.6076555023923444,
+                "recall": 0.6827956989247311,
+                "f1": 0.6430379746835443,
+                "extreme_actual_events_45plus": 14,
+                "extreme_events_detected_at_28": 13,
+                "extreme_event_recall": 0.9285714285714286
+            },
+            "severity": [
+                {
+                    "severity": "Below 28",
+                    "records": 2754,
+                    "actual_mean": 5.008714596949891,
+                    "predicted_mean": 6.114345458161964,
+                    "bias": 1.1056308612120729,
+                    "mae": 1.9233503887304666,
+                    "rmse": 3.567074953844938,
+                    "underprediction_rate": 0.20515613652868556,
+                    "detected_at_28": 82
+                },
+                {
+                    "severity": "28-34",
+                    "records": 106,
+                    "actual_mean": 30.443396226415093,
+                    "predicted_mean": 29.760030130632135,
+                    "bias": -0.6833660957829597,
+                    "mae": 5.3553934875689295,
+                    "rmse": 6.644590612512282,
+                    "underprediction_rate": 0.5849056603773585,
+                    "detected_at_28": 57
+                },
+                {
+                    "severity": "35-44",
+                    "records": 66,
+                    "actual_mean": 38.803030303030305,
+                    "predicted_mean": 37.54574321679346,
+                    "bias": -1.2572870862368404,
+                    "mae": 7.9274196174630704,
+                    "rmse": 9.116949867463465,
+                    "underprediction_rate": 0.5757575757575758,
+                    "detected_at_28": 57
+                },
+                {
+                    "severity": "45-59",
+                    "records": 14,
+                    "actual_mean": 49.642857142857146,
+                    "predicted_mean": 37.633228188404246,
+                    "bias": -12.009628954452888,
+                    "mae": 12.009628954452888,
+                    "rmse": 13.201623313613336,
+                    "underprediction_rate": 1.0,
+                    "detected_at_28": 13
+                },
+                {
+                    "severity": "60+",
+                    "records": 0,
+                    "actual_mean": null,
+                    "predicted_mean": null,
+                    "bias": null,
+                    "mae": null,
+                    "rmse": null,
+                    "underprediction_rate": null,
+                    "detected_at_28": null
+                }
+            ]
+        }
+    }
+}

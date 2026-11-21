@@ -1,0 +1,96 @@
+{
+    "experiment": "J",
+    "description": "Quantile regression and prediction intervals",
+    "training_records": 24540,
+    "validation_records": 2940,
+    "training_period": {
+        "start": "2016-02-01",
+        "end": "2023-11-27"
+    },
+    "validation_period": {
+        "start": "2024-01-01",
+        "end": "2024-12-02"
+    },
+    "reference_model": {
+        "mae": 2.21626915552009,
+        "rmse": 4.0088595063252015,
+        "bias": 1.0471113473117555,
+        "underprediction_records": 640,
+        "overprediction_records": 2293
+    },
+    "p50_metrics": {
+        "mae": 2.047479518956455,
+        "rmse": 3.757011123368311,
+        "bias": 0.5301625541219046,
+        "underprediction_records": 746,
+        "overprediction_records": 2189
+    },
+    "quantile_results": {
+        "P50": {
+            "quantile": 0.5,
+            "quantile_loss": 1.0237397594782276,
+            "coverage": 0.7462585034013606,
+            "coverage_error": 0.24625850340136057,
+            "mean_prediction": 7.427101329632109,
+            "actual_mean": 6.896938775510204,
+            "mae": 2.047479518956455
+        },
+        "P80": {
+            "quantile": 0.8,
+            "quantile_loss": 0.761713774542434,
+            "coverage": 0.8884353741496599,
+            "coverage_error": 0.08843537414965985,
+            "mean_prediction": 9.578733796664078,
+            "actual_mean": 6.896938775510204,
+            "mae": 3.132504561777193
+        },
+        "P90": {
+            "quantile": 0.9,
+            "quantile_loss": 0.5392285769554508,
+            "coverage": 0.9207482993197279,
+            "coverage_error": 0.02074829931972788,
+            "mean_prediction": 10.543644166761151,
+            "actual_mean": 6.896938775510204,
+            "mae": 3.995821466911659
+        }
+    },
+    "interval_80": {
+        "nominal_coverage": 0.8,
+        "actual_coverage": 0.9207482993197279,
+        "coverage_error": 0.12074829931972786,
+        "mean_interval_width": 10.543644166761151,
+        "median_interval_width": 3.548085095247272,
+        "below_interval": 0,
+        "above_interval": 233
+    },
+    "severity_results": [
+        {
+            "severity": "Below 28",
+            "records": 2754,
+            "A_MAE": 1.9161972885304015,
+            "J_P50_MAE": 1.7401318802439463,
+            "P90_coverage": 0.9371822803195352
+        },
+        {
+            "severity": "28-34",
+            "records": 106,
+            "A_MAE": 5.368306840585465,
+            "J_P50_MAE": 5.181504676390467,
+            "P90_coverage": 0.7547169811320755
+        },
+        {
+            "severity": "35-44",
+            "records": 66,
+            "A_MAE": 7.739204276061819,
+            "J_P50_MAE": 7.363728742504898,
+            "P90_coverage": 0.6363636363636364
+        },
+        {
+            "severity": "45-59",
+            "records": 14,
+            "A_MAE": 11.342569806728642,
+            "J_P50_MAE": 13.715785345531188,
+            "P90_coverage": 0.2857142857142857
+        }
+    ]
+}

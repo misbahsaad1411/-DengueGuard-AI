@@ -1,0 +1,150 @@
+{
+    "experiment": "M - Model Blending",
+    "input": "D:\\DengueGuard-AI\\reports\\experiment_l_predictions.csv",
+    "validation_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+    ],
+    "threshold_method": "Per-record threshold from its own training fold",
+    "severe_threshold": 45.0,
+    "models": {
+        "A_100_Q50_0": {
+            "model_A_weight": 1.0,
+            "Q50_weight": 0.0,
+            "pooled_regression": {
+                "records": 14400,
+                "mae": 3.024997916666667,
+                "rmse": 5.709045896523438,
+                "r2": 0.8234107909140632,
+                "bias": -0.6699076388888889
+            },
+            "pooled_high_event": {
+                "actual_high": 1822,
+                "predicted_high": 1358,
+                "tp": 1075,
+                "fp": 283,
+                "fn": 747,
+                "precision": 0.7916053019145802,
+                "recall": 0.5900109769484083,
+                "f1": 0.6761006289308176
+            },
+            "severe_outbreak": {
+                "records": 423,
+                "mae": 15.130189125295507,
+                "bias": -14.654728132387707,
+                "underprediction_rate": 0.9408983451536643
+            }
+        },
+        "A_75_Q50_25": {
+            "model_A_weight": 0.75,
+            "Q50_weight": 0.25,
+            "pooled_regression": {
+                "records": 14400,
+                "mae": 2.9270868055555557,
+                "rmse": 5.519197277709665,
+                "r2": 0.8349601090418963,
+                "bias": -0.74124375
+            },
+            "pooled_high_event": {
+                "actual_high": 1822,
+                "predicted_high": 1335,
+                "tp": 1089,
+                "fp": 246,
+                "fn": 733,
+                "precision": 0.8157303370786517,
+                "recall": 0.5976948408342481,
+                "f1": 0.6898954703832753
+            },
+            "severe_outbreak": {
+                "records": 423,
+                "mae": 15.40855791962175,
+                "bias": -15.147517730496453,
+                "underprediction_rate": 0.9645390070921985
+            }
+        },
+        "A_50_Q50_50": {
+            "model_A_weight": 0.5,
+            "Q50_weight": 0.5,
+            "pooled_regression": {
+                "records": 14400,
+                "mae": 2.8561937499999996,
+                "rmse": 5.392809820209169,
+                "r2": 0.842432261247033,
+                "bias": -0.8130131944444444
+            },
+            "pooled_high_event": {
+                "actual_high": 1822,
+                "predicted_high": 1336,
+                "tp": 1109,
+                "fp": 227,
+                "fn": 713,
+                "precision": 0.8300898203592815,
+                "recall": 0.6086717892425906,
+                "f1": 0.7023432552248259
+            },
+            "severe_outbreak": {
+                "records": 423,
+                "mae": 15.762222222222222,
+                "bias": -15.640425531914893,
+                "underprediction_rate": 0.9739952718676123
+            }
+        },
+        "A_25_Q50_75": {
+            "model_A_weight": 0.25,
+            "Q50_weight": 0.75,
+            "pooled_regression": {
+                "records": 14400,
+                "mae": 2.817009027777778,
+                "rmse": 5.3344179203181215,
+                "r2": 0.8458259905589961,
+                "bias": -0.8845951388888889
+            },
+            "pooled_high_event": {
+                "actual_high": 1822,
+                "predicted_high": 1314,
+                "tp": 1095,
+                "fp": 219,
+                "fn": 727,
+                "precision": 0.8333333333333334,
+                "recall": 0.6009879253567508,
+                "f1": 0.6983418367346939
+            },
+            "severe_outbreak": {
+                "records": 423,
+                "mae": 16.176524822695036,
+                "bias": -16.13340425531915,
+                "underprediction_rate": 0.9858156028368794
+            }
+        },
+        "A_0_Q50_100": {
+            "model_A_weight": 0.0,
+            "Q50_weight": 1.0,
+            "pooled_regression": {
+                "records": 14400,
+                "mae": 2.810325,
+                "rmse": 5.346216760736304,
+                "r2": 0.8451432220524525,
+                "bias": -0.9561194444444444
+            },
+            "pooled_high_event": {
+                "actual_high": 1822,
+                "predicted_high": 1277,
+                "tp": 1072,
+                "fp": 205,
+                "fn": 750,
+                "precision": 0.8394675019577134,
+                "recall": 0.5883644346871569,
+                "f1": 0.691836076153598
+            },
+            "severe_outbreak": {
+                "records": 423,
+                "mae": 16.65018912529551,
+                "bias": -16.62598108747045,
+                "underprediction_rate": 0.9905437352245863
+            }
+        }
+    }
+}

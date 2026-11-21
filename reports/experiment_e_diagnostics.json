@@ -1,0 +1,292 @@
+{
+    "experiment": "E - Seasonal forecast bias correction",
+    "calibration_source": "2023 out-of-time predictions",
+    "evaluation_source": "2024 Experiment A validation predictions",
+    "global_correction": 0.7549673023259225,
+    "shrinkage_strength": 60.0,
+    "monthly_corrections": [
+        {
+            "target_month": 1,
+            "mean": -0.05922462630582866,
+            "count": 120,
+            "shrinkage_weight": 0.6666666666666666,
+            "correction": 0.21217268323808836
+        },
+        {
+            "target_month": 2,
+            "mean": -0.07859281851830059,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 0.08811920565054399
+        },
+        {
+            "target_month": 3,
+            "mean": 0.19190496948521363,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 0.30451743605335535
+        },
+        {
+            "target_month": 4,
+            "mean": 0.16964478425547672,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 0.28670928786956584
+        },
+        {
+            "target_month": 5,
+            "mean": -0.30902332986057107,
+            "count": 300,
+            "shrinkage_weight": 0.8333333333333334,
+            "correction": -0.13169155782948894
+        },
+        {
+            "target_month": 6,
+            "mean": 0.1408900004675037,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 0.2637054608391874
+        },
+        {
+            "target_month": 7,
+            "mean": 3.087279015332273,
+            "count": 300,
+            "shrinkage_weight": 0.8333333333333334,
+            "correction": 2.6985603964978813
+        },
+        {
+            "target_month": 8,
+            "mean": 5.076533320499385,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 4.212220116864692
+        },
+        {
+            "target_month": 9,
+            "mean": 5.423241707279578,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 4.489586826288847
+        },
+        {
+            "target_month": 10,
+            "mean": -4.210526981992647,
+            "count": 300,
+            "shrinkage_weight": 0.8333333333333334,
+            "correction": -3.382944601272886
+        },
+        {
+            "target_month": 11,
+            "mean": -0.03535213281794096,
+            "count": 240,
+            "shrinkage_weight": 0.8,
+            "correction": 0.12271175421083169
+        },
+        {
+            "target_month": 12,
+            "mean": -0.011614358581000513,
+            "count": 180,
+            "shrinkage_weight": 0.75,
+            "correction": 0.18003105664573027
+        }
+    ],
+    "overall_results": {
+        "original": {
+            "records": 2940,
+            "mae": 2.216377551020408,
+            "rmse": 4.008789488519609,
+            "bias": 1.0472074829931972,
+            "actual_mean": 6.896938775510204,
+            "predicted_mean": 7.944146258503402,
+            "high_event_records": 186,
+            "high_event_mae": 6.659032258064515,
+            "overpredictions": 2292,
+            "underpredictions": 640
+        },
+        "global_corrected": {
+            "records": 2940,
+            "mae": 2.676791215693946,
+            "rmse": 4.268674689838566,
+            "bias": 1.8021747853191195,
+            "actual_mean": 6.896938775510204,
+            "predicted_mean": 8.699113560829325,
+            "high_event_records": 186,
+            "high_event_mae": 6.542799214803664,
+            "overpredictions": 2446,
+            "underpredictions": 494
+        },
+        "seasonal_corrected": {
+            "records": 2940,
+            "mae": 2.8083168754901555,
+            "rmse": 5.06452684015728,
+            "bias": 2.0663440668085302,
+            "actual_mean": 6.896938775510204,
+            "predicted_mean": 8.963282842318733,
+            "high_event_records": 186,
+            "high_event_mae": 6.775202497309643,
+            "overpredictions": 2331,
+            "underpredictions": 522
+        }
+    },
+    "monthly_results": [
+        {
+            "target_month": "January",
+            "records": 120,
+            "actual_high_events": 0,
+            "original_mae": 0.16108333333333333,
+            "seasonal_mae": 0.3591111710222158,
+            "original_rmse": 0.21431479961340358,
+            "seasonal_rmse": 0.3662311044746671,
+            "original_bias": 0.10175000000000001,
+            "seasonal_bias": 0.31392268323808836,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "February",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 0.1608333333333333,
+            "seasonal_mae": 0.2423435985600865,
+            "original_rmse": 0.21650635094610965,
+            "seasonal_rmse": 0.26745001181685735,
+            "original_bias": 0.09583333333333334,
+            "seasonal_bias": 0.18395253898387734,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "March",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 0.20195833333333332,
+            "seasonal_mae": 0.4734863804809085,
+            "original_rmse": 0.38201385227938184,
+            "seasonal_rmse": 0.5276169075624862,
+            "original_bias": 0.06520833333333333,
+            "seasonal_bias": 0.36972576938668866,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "April",
+            "records": 300,
+            "actual_high_events": 0,
+            "original_mae": 1.1728666666666667,
+            "seasonal_mae": 1.1849358906055074,
+            "original_rmse": 1.7389891699873619,
+            "seasonal_rmse": 1.6734467666420567,
+            "original_bias": -0.5334000000000001,
+            "seasonal_bias": -0.2466907121304342,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "May",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 1.34225,
+            "seasonal_mae": 1.2893797621291874,
+            "original_rmse": 1.6001869682425653,
+            "seasonal_rmse": 1.5462093645025061,
+            "original_bias": 0.7106666666666666,
+            "seasonal_bias": 0.5789751088371777,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "June",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 2.0545,
+            "seasonal_mae": 2.19024782143358,
+            "original_rmse": 2.4820913560946947,
+            "seasonal_rmse": 2.616482833751376,
+            "original_bias": 1.1673333333333331,
+            "seasonal_bias": 1.4310387941725204,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "July",
+            "records": 300,
+            "actual_high_events": 38,
+            "original_mae": 4.725933333333333,
+            "seasonal_mae": 5.993031181805339,
+            "original_rmse": 6.201166771933597,
+            "seasonal_rmse": 7.572945427846598,
+            "original_bias": 2.151666666666667,
+            "seasonal_bias": 4.8502270631645485,
+            "original_high_event_mae": 6.530263157894736,
+            "seasonal_high_event_mae": 6.103046274052855
+        },
+        {
+            "target_month": "August",
+            "records": 240,
+            "actual_high_events": 87,
+            "original_mae": 5.579875,
+            "seasonal_mae": 6.898179397608914,
+            "original_rmse": 7.064462559176034,
+            "seasonal_rmse": 8.527678089724526,
+            "original_bias": 0.6020416666666667,
+            "seasonal_bias": 4.81426178353136,
+            "original_high_event_mae": 7.677241379310342,
+            "seasonal_high_event_mae": 6.941902768023596
+        },
+        {
+            "target_month": "September",
+            "records": 300,
+            "actual_high_events": 61,
+            "original_mae": 6.057466666666666,
+            "seasonal_mae": 9.52183089815137,
+            "original_rmse": 7.523688279915199,
+            "seasonal_rmse": 10.914623656126007,
+            "original_bias": 4.718333333333334,
+            "seasonal_bias": 9.207920159622182,
+            "original_high_event_mae": 5.28704918032787,
+            "seasonal_high_event_mae": 6.956169922418559
+        },
+        {
+            "target_month": "October",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 2.579458333333333,
+            "seasonal_mae": 1.765372206539378,
+            "original_rmse": 3.91824253758408,
+            "seasonal_rmse": 2.7559638268842317,
+            "original_bias": 2.1134583333333334,
+            "seasonal_bias": 0.10861103269689037,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "November",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 0.08529166666666668,
+            "seasonal_mae": 0.20595822497398453,
+            "original_rmse": 0.11754254548885693,
+            "seasonal_rmse": 0.2148640406994834,
+            "original_bias": 0.07045833333333335,
+            "seasonal_bias": 0.19317008754416504,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        },
+        {
+            "target_month": "December",
+            "records": 240,
+            "actual_high_events": 0,
+            "original_mae": 0.12058333333333333,
+            "seasonal_mae": 0.28261128431449056,
+            "original_rmse": 0.2157448338508557,
+            "seasonal_rmse": 0.30059770726206103,
+            "original_bias": 0.031666666666666676,
+            "seasonal_bias": 0.21169772331239692,
+            "original_high_event_mae": null,
+            "seasonal_high_event_mae": null
+        }
+    ],
+    "model_modified": false,
+    "2025_test_used": false,
+    "2025_test_modified": false
+}

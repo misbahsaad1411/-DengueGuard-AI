@@ -1,0 +1,17 @@
+{
+    "original_records": 31320,
+    "engineered_records": 30840,
+    "removed_records": 480,
+    "unique_wards": 60,
+    "unique_cities": 5,
+    "feature_count": 46,
+    "target_column": "target_cases_next_2_4w",
+    "target_definition": "Sum of dengue cases at weeks t+2, t+3 and t+4",
+    "start_date": "2016-02-01",
+    "end_date": "2025-12-01",
+    "missing_values": 0,
+    "target_minimum": 0,
+    "target_maximum": 92,
+    "target_mean": 8.032,
+    "output_file": "D:\\DengueGuard-AI\\data\\processed\\dengue_features.csv"
+}

@@ -1,0 +1,53 @@
+{
+    "project": "DengueGuard AI",
+    "final_forecaster": "Q50",
+    "high_warning_model": "RandomForestClassifier",
+    "high_warning_probability_cutoff": 0.5,
+    "high_event_threshold": 27.0,
+    "severe_event_threshold": 45.0,
+    "training_records": 27720,
+    "feature_count": 46,
+    "training_cutoff": "2024-12-31",
+    "evaluation_period": "2025",
+    "forecast_horizon": "Weeks 2-4",
+    "regression_test_results": [
+        {
+            "model": "Model_A",
+            "records": 2880,
+            "MAE": 2.694559027777778,
+            "RMSE": 4.962924306657428,
+            "R2": 0.7879791206459452,
+            "bias": 1.509079861111111
+        },
+        {
+            "model": "Q50",
+            "records": 2880,
+            "MAE": 2.606927083333333,
+            "RMSE": 4.74709976883547,
+            "R2": 0.8060186189286163,
+            "bias": 1.192892361111111
+        },
+        {
+            "model": "50_50_Blend",
+            "records": 2880,
+            "MAE": 2.6160277777777776,
+            "RMSE": 4.770522719146078,
+            "R2": 0.8040996258857714,
+            "bias": 1.3510694444444444
+        }
+    ],
+    "high_event_test_results": {
+        "records": 2880,
+        "actual_events": 241,
+        "predicted_events": 477,
+        "TP": 211,
+        "FP": 266,
+        "FN": 30,
+        "TN": 2373,
+        "precision": 0.44234800838574423,
+        "recall": 0.8755186721991701,
+        "F1": 0.5877437325905293,
+        "average_precision": 0.5830833486966988
+    },
+    "note": "2025 was not used for fitting or model selection. This evaluation is a final holdout check."
+}

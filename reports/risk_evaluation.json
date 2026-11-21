@@ -1,0 +1,240 @@
+{
+    "risk_method": "City-month positive-case percentiles with city-wide and national fallbacks",
+    "historical_period": "2016-2023",
+    "risk_definitions": {
+        "Low": "Predicted cases equal zero",
+        "Guarded": "Positive prediction below historical positive-case median",
+        "High": "Positive median to below positive 80th percentile",
+        "Critical": "At or above historical positive 80th percentile"
+    },
+    "historical_threshold_groups": 60,
+    "threshold_source_distribution": {
+        "city_month": 58,
+        "city_wide_fallback": 2
+    },
+    "test_records": 2880,
+    "exact_risk_tier_match_rate": 0.7069,
+    "confusion_matrix_labels": [
+        "Low",
+        "Guarded",
+        "High",
+        "Critical"
+    ],
+    "confusion_matrix": [
+        [
+            1100,
+            89,
+            38,
+            1
+        ],
+        [
+            4,
+            526,
+            207,
+            28
+        ],
+        [
+            66,
+            153,
+            243,
+            107
+        ],
+        [
+            41,
+            20,
+            90,
+            167
+        ]
+    ],
+    "classification_report": {
+        "Low": {
+            "precision": 0.9083402146985962,
+            "recall": 0.8957654723127035,
+            "f1-score": 0.9020090200902009,
+            "support": 1228.0
+        },
+        "Guarded": {
+            "precision": 0.6675126903553299,
+            "recall": 0.6875816993464052,
+            "f1-score": 0.6773985833869929,
+            "support": 765.0
+        },
+        "High": {
+            "precision": 0.4204152249134948,
+            "recall": 0.4270650263620387,
+            "f1-score": 0.4237140366172624,
+            "support": 569.0
+        },
+        "Critical": {
+            "precision": 0.5511551155115512,
+            "recall": 0.5251572327044025,
+            "f1-score": 0.537842190016103,
+            "support": 318.0
+        },
+        "accuracy": 0.7069444444444445,
+        "macro avg": {
+            "precision": 0.636855811369743,
+            "recall": 0.6338923576813875,
+            "f1-score": 0.6352409575276399,
+            "support": 2880.0
+        },
+        "weighted avg": {
+            "precision": 0.7085321463472761,
+            "recall": 0.7069444444444445,
+            "f1-score": 0.7076403111882498,
+            "support": 2880.0
+        }
+    },
+    "predicted_tier_summary": {
+        "Low": {
+            "records": 1211,
+            "average_predicted_cases": 0.1,
+            "average_actual_cases": 0.11,
+            "average_absolute_error": 0.179
+        },
+        "Guarded": {
+            "records": 788,
+            "average_predicted_cases": 10.177,
+            "average_actual_cases": 9.157,
+            "average_absolute_error": 2.763
+        },
+        "High": {
+            "records": 578,
+            "average_predicted_cases": 15.145,
+            "average_actual_cases": 12.761,
+            "average_absolute_error": 4.419
+        },
+        "Critical": {
+            "records": 303,
+            "average_predicted_cases": 32.087,
+            "average_actual_cases": 24.904,
+            "average_absolute_error": 9.279
+        }
+    },
+    "actual_tier_summary": {
+        "Low": {
+            "records": 1228,
+            "average_actual_cases": 0.0
+        },
+        "Guarded": {
+            "records": 765,
+            "average_actual_cases": 10.613
+        },
+        "High": {
+            "records": 569,
+            "average_actual_cases": 13.554
+        },
+        "Critical": {
+            "records": 318,
+            "average_actual_cases": 20.252
+        }
+    },
+    "city_tier_distribution": {
+        "Chattogram": {
+            "Low": 204,
+            "Guarded": 122,
+            "High": 107,
+            "Critical": 47
+        },
+        "Dhaka North": {
+            "Low": 403,
+            "Guarded": 273,
+            "High": 186,
+            "Critical": 98
+        },
+        "Dhaka South": {
+            "Low": 404,
+            "Guarded": 257,
+            "High": 195,
+            "Critical": 104
+        },
+        "Gazipur": {
+            "Low": 100,
+            "Guarded": 76,
+            "High": 40,
+            "Critical": 24
+        },
+        "Narayanganj": {
+            "Low": 100,
+            "Guarded": 60,
+            "High": 50,
+            "Critical": 30
+        }
+    },
+    "monthly_tier_distribution": {
+        "1": {
+            "Low": 240,
+            "Guarded": 0,
+            "High": 0,
+            "Critical": 0
+        },
+        "2": {
+            "Low": 240,
+            "Guarded": 0,
+            "High": 0,
+            "Critical": 0
+        },
+        "3": {
+            "Low": 187,
+            "Guarded": 53,
+            "High": 56,
+            "Critical": 4
+        },
+        "4": {
+            "Low": 0,
+            "Guarded": 132,
+            "High": 105,
+            "Critical": 3
+        },
+        "5": {
+            "Low": 0,
+            "Guarded": 111,
+            "High": 106,
+            "Critical": 23
+        },
+        "6": {
+            "Low": 0,
+            "Guarded": 4,
+            "High": 77,
+            "Critical": 219
+        },
+        "7": {
+            "Low": 0,
+            "Guarded": 150,
+            "High": 81,
+            "Critical": 9
+        },
+        "8": {
+            "Low": 0,
+            "Guarded": 148,
+            "High": 71,
+            "Critical": 21
+        },
+        "9": {
+            "Low": 4,
+            "Guarded": 190,
+            "High": 82,
+            "Critical": 24
+        },
+        "10": {
+            "Low": 240,
+            "Guarded": 0,
+            "High": 0,
+            "Critical": 0
+        },
+        "11": {
+            "Low": 240,
+            "Guarded": 0,
+            "High": 0,
+            "Critical": 0
+        },
+        "12": {
+            "Low": 60,
+            "Guarded": 0,
+            "High": 0,
+            "Critical": 0
+        }
+    },
+    "threshold_file": "D:\\DengueGuard-AI\\reports\\risk_thresholds.csv",
+    "risk_predictions_file": "D:\\DengueGuard-AI\\reports\\ward_risk_predictions.csv"
+}
